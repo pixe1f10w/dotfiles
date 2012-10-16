@@ -1,5 +1,7 @@
 # Dotty repository
 
+This is configuration files of my environment. This repo uses [Dotty](https://github.com/trym/dotty).
+
 ## dotfiles/
 
 Dotty will symlink files and directories in the root your repos dotfiles/ directory, relative to ~.
@@ -16,7 +18,7 @@ You can symlink stuff to sub directories of ~ by using the in+subdir directory n
 If you want more control over the symlinking, you can create a dotty-symlink.yml in the repo root.
 
 ### Example
-    
+
     file_in_repo:.in_home_dir
 
 ## dotty-repository.thor
