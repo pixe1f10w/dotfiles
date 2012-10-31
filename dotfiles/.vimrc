@@ -63,6 +63,7 @@ let g:syntastic_enable_signs=1
 map <F5> <Esc>:w<CR>:!%:p<CR>
 map <F1> <Esc>:NERDTreeToggle<CR>
 set pastetoggle=<F2>
+inoremap jj <ESC>
 
 " No switch keyboard layout for commands in normal mode.
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl\\;'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL:\\"ZXCVBNM<>

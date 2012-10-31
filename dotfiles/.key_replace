@@ -1,1 +1,10 @@
-keycode 135 = Escape 
+! Make Right Menu key and Right Alt key act as Escape
+keycode 135 = Escape
+keysym Meta_R = Escape
+
+! Make Caps_Lock act as Control_L
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
