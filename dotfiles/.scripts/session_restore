@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for url in `$HOME/.scripts/extract_urls.rb $1`
+do
+    exec surf -e $2 $url &
+done
