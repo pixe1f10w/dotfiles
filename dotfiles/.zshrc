@@ -34,9 +34,11 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 plugins=(rails rails3 ruby gem bundler github heroku jruby npm pip python rake rvm ssh-agent vi-mode vagrant )
 
 source $ZSH/oh-my-zsh.sh
-source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Customize to your needs...
+
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
 bindkey -v
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
