@@ -137,3 +137,16 @@ map Ю >
 
 au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw!
 
+let g:NERDTreeWinPos="right"
+set mouse=a
+set ttymouse=xterm2
+
+setlocal spell spelllang=ru,en
+set spell
+
+nnoremap gn :tabnew<CR>
+nnoremap gC :tabclose<CR>
+
+set formatoptions-=c,r,o
+
+set cursorline

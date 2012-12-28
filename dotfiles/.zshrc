@@ -30,10 +30,16 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git rails rails3 ruby gem bundler github heroku jruby npm pip python rake rvm ssh-agent vi-mode vagrant )
+#plugins=(git rails rails3 ruby gem bundler github heroku jruby npm pip python rake rvm ssh-agent vi-mode vagrant )
+plugins=(rails rails3 ruby gem bundler github heroku jruby npm pip python rake rvm ssh-agent vi-mode vagrant )
 
 source $ZSH/oh-my-zsh.sh
+source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Customize to your needs...
 
 bindkey -v
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  ]]
+xmodmap $HOME/.key_replace
+unset RUBYOPT

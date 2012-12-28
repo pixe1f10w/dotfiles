@@ -1,0 +1,17 @@
+#!/bin/bash
+# TODO: rewrite in ruby with more logic
+
+IFS=!
+
+#files1=( file1.txt file2.txt file3.txt )
+#files2=( file1_.txt file2_.txt file3_.txt )
+files1=(`find $1 -type f -printf %f!`)
+files2=(`find $2 -type f -printf %f!`)
+
+cmd="vim -c 'set diffopt=filler,vertical' -c 'edit ${files1[0]}' -c 'diffsplit ${files2[0]}' "
+echo $cmd
+for i in {1..2}; do
+  cmd="${cmd} -c 'tabe ${files1[i]}' -c 'diffsplit ${files2[i]}' "
+done
+
+eval $cmd
